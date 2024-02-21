@@ -1,8 +1,9 @@
-### Run by docker 
+### Run nano in a machine without nano (e.g., plaftorm / buildchain incompatible)
 ```bash
 sudo docker run \
  --name nano
+ --volume /host/path:/container/path
  --rm \
  -it \
- developercyrus/nano file.txt
+ developercyrus/nano /container/path/file.txt
 ```
